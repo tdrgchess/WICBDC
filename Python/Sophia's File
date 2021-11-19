@@ -1,1 +1,3 @@
 Hi
+This is thomas, adding some text to this file!
+git config --global gpg.program "C:/Program Files (x86)/GNU/GnuPG/gpg2.exe"
