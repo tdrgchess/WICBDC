@@ -1,4 +1,4 @@
--- Create a new database called 'TestingDB'
+-- Create a new database called 'TestingDB' Change this to your own database name for each instance.
 -- Connect to the 'master' database to run this snippet
 USE master
 GO
