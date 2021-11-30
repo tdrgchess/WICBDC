@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\Thomas\\WICBDC\\SQL\\WICBDC\\WICBDC.sqlproj": {}
+  },
+  "projects": {
+    "c:\\Users\\Thomas\\WICBDC\\SQL\\WICBDC\\WICBDC.sqlproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\Thomas\\WICBDC\\SQL\\WICBDC\\WICBDC.sqlproj",
+        "projectName": "WICBDC",
+        "projectPath": "c:\\Users\\Thomas\\WICBDC\\SQL\\WICBDC\\WICBDC.sqlproj",
+        "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Thomas\\WICBDC\\SQL\\WICBDC\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

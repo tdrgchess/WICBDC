@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "FhJ0/3sqWbKSHn4/iDIFPVVl/PnT3FgvokOwPq3cV1Nk6Djxnv7QnT9imr//bD3Nz5s1+jOEc5qIOVBePb6dNw==",
+  "success": false,
+  "projectFilePath": "c:\\Users\\Thomas\\WICBDC\\SQL\\WICBDC\\WICBDC.sqlproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.NETFramework.ReferenceAssemblies. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETFramework.ReferenceAssemblies",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6"
+      ]
+    }
+  ]
+}
