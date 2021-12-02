@@ -1,0 +1,61 @@
+Link to database website which has more information about the database
+: https://datahub.io/core/co2-ppm#python
+
+For Python, first install the `datapackage` library (all the datasets on DataHub are Data Packages):
+
+pip install datapackage
+To get Data Package into your Python environment, run following code:
+
+from datapackage import Package
+
+package = Package('https://datahub.io/core/co2-ppm/datapackage.json')
+
+# print list of all resources:
+print(package.resource_names)
+
+# print processed tabular data (if exists any)
+for resource in package.resources:
+    if resource.descriptor['datahub']['type'] == 'derived/csv':
+        print(resource.read())
+
+For Pandas: Install the Frictionless Data data package library and the pandas itself:
+
+pip install datapackage
+pip install pandas
+Now you can use the datapackage in the Pandas:
+
+import datapackage
+import pandas as pd
+
+data_url = 'https://datahub.io/core/co2-ppm/datapackage.json'
+
+# to load Data Package into storage
+package = datapackage.Package(data_url)
+
+# to load only tabular data
+resources = package.resources
+for resource in resources:
+    if resource.tabular:
+        data = pd.read_csv(resource.descriptor['path'])
+        print (data)
+
+
+If you are using R here's how to get the data you want quickly loaded:
+
+install.packages("jsonlite", repos="https://cran.rstudio.com/")
+library("jsonlite")
+
+json_file <- 'https://datahub.io/core/co2-ppm/datapackage.json'
+json_data <- fromJSON(paste(readLines(json_file), collapse=""))
+
+# get list of all resources:
+print(json_data$resources$name)
+
+# print all tabular data(if exists any)
+for(i in 1:length(json_data$resources$datahub$type)){
+  if(json_data$resources$datahub$type[i]=='derived/csv'){
+    path_to_file = json_data$resources$path[i]
+    data <- read.csv(url(path_to_file))
+    print(data)
+  }
+}

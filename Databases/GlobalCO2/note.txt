@@ -1,0 +1,4 @@
+SQL Tables have been created for each of these files. 
+
+WIC-MEDIA\WICMEDIASQL
+db: HSBDC
